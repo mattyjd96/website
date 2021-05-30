@@ -1,0 +1,266 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+  font-family: 'built_titling';
+  src: url('../fonts/built_titling/built-titling-sb.ttf') format('truetype');
+}
+
+h1 {
+  font-family: "built_titling", sans-serif;
+  font-size: 100pt;
+  padding-left: 20px;
+  color: #ffff00;
+}
+
+h2 {
+  font-family: "built_titling", sans-serif;
+  font-size: 100pt;
+  text-align: right;
+  padding-right: 20px;
+  color: #ffff00;
+}
+
+h3 {
+  font-family: "built_titling", sans-serif;
+  font-size: 100pt;
+  text-align: center;
+  color: #ffff00;
+}
+
+h4 {
+  font-family: "built_titling", sans-serif;
+  font-size: 100pt;
+  padding-left: 20px;
+  color: #77e88f;
+}
+
+h5 {
+  font-family: "built_titling", sans-serif;
+  font-size: 66pt;
+  padding-left: 20px;
+  color: #77e88f;
+}
+
+h6 {
+  font-family: "built_titling", sans-serif;
+  font-size: 25pt;
+  /* padding-left: 20px; */
+  color: #FFFFFF;
+}
+
+p {
+  font-family: 'futura', sans-serif;
+  font-size: 20px;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  /* Flex: 1 = tells the browser that all flex items are the same size */
+  justify-content: space-around;
+}
+
+nav {
+  background: #d82b61;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.5em 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13pt
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: #ffff00;
+  border-bottom: solid 4px #ffff00;
+}
+
+nav a.right {
+  margin-right: auto;
+}
+
+nav a.right:hover {
+  border: 0;
+}
+
+#landing {
+  background-image: url('../images/mattythumb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 99vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing img {
+  max-width: 300px;
+  padding-bottom: 10px
+}
+
+body {
+  background-color: #e193a9
+}
+
+h1, h2, h3, h4  {
+  padding-top: 100px;
+}
+
+#matty .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  align-content: center;
+}
+
+
+
+#just-a-dash .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+#where-to-watch .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 22vh;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+#where-to-watch-images .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#recipe .col {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 11px;
+}
+
+#recipe .featured-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#directions .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+#direction .pic-and-vid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+iframe {
+  border: 0;
+  padding-right: 20px;
+}
+
+a:-webkit-any-link {
+  color: #77e88f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#link .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .nav {
+    justify-content: flex-end;
+    align-items: center;
+    /* vertical alignment */
+  /* } */
+.col{
+  flex: 0;
+}
+
+.flex-grid{
+  display: block;
+}
+  #landing {
+
+
+  }
+
+  section#matty div.col{
+height: auto;
+
+  }
+
+  #just-a-dash div.col{
+    height: auto;
+
+
+  }
+
+  #where-to-watch div.col{
+    height: auto;
+
+  }
+}
